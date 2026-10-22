@@ -6,10 +6,11 @@
 /*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:09:17 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/20 15:52:34 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/22 18:42:55 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include "../includes/libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -18,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*s;
 
 	i = 0;
+	if (!dest || !src)
+		return (dest);
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	while (s[i] && i < n)
