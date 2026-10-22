@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	d = (unsigned char *)s;
 	while (i < n)
 	{
-		if (d[i] == c)
+		if (d[i] == (unsigned char) c)
 			return ((char *)&d[i]);
 		i++;
 	}
