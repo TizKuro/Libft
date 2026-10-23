@@ -31,15 +31,15 @@ size_t	ft_strlen(char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-char	*strchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 char	*ft_strdup(const char *src);
 void	*ft_calloc(size_t nelem, size_t elsize);
 void	ft_putchar_fd(char c, int fd);
-void	ft_putnbr_fd(char c, int fd);
+void	ft_putnbr_fd(int c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 #endif
