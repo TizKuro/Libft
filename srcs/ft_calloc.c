@@ -17,9 +17,9 @@ void	*ft_calloc(size_t nelem, size_t elsize)
 	void	*new;
 
 	if (nelem == 0 || elsize == 0)
-		return (0);
+		return (malloc(0));
 	if ((nelem * elsize) / elsize != nelem)
-		return (0);
+		return (NULL);
 	new = malloc(nelem * elsize);
 	if (!new)
 		return (0);
