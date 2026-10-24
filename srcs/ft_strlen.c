@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
+/*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 17:09:17 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/20 10:36:20 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/24 21:06:44 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-size_t	ft_strlen(char *str)
+#include "../includes/libft.h"
+size_t	ft_strlen(const char *str)
 {
 	size_t	len;
 

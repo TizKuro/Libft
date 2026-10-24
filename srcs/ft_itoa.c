@@ -1,6 +1,5 @@
 
-#include <stdlib.h>
-#include <unistd.h>
+#include "libft.h"
 static int	ft_len(long int n)
 {
 	int len;
