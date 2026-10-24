@@ -36,10 +36,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new[len] = '\0';
 	return (new);
 }
-
-#include <stdio.h>
-int main ()
-{
-	//printf("%s",ft_substr("hello", 4, 18446744073709551615));
-}
-
