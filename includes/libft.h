@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 10:21:47 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/24 20:59:56 by tristan          ###   ########.fr       */
+/*   Updated: 2026/10/25 15:32:02 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr_fd(int c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 char	*ft_itoa(int nbr);
-char *ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
