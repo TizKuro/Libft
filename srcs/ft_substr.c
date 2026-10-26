@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 14:08:21 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/25 15:30:54 by tristan          ###   ########.fr       */
+/*   Updated: 2026/10/26 14:58:39 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new = malloc(sizeof(char) * (len + 1));
 	if (!new)
 		return (0);
-	while (i < len || s[start])
+	while (i < len && s[start])
 	{
 		new[i] = s[start];
 		start++;
