@@ -6,7 +6,7 @@
 /*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 10:21:47 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/26 02:15:27 by tristan          ###   ########.fr       */
+/*   Updated: 2026/10/26 02:26:04 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi (char const *s, char (*f)(unsigned int, char));
-void ft_striteri(char *s, void (*f)(unsigned int,char*));
+void	ft_striteri(char *s, void (*f)(unsigned int,char*));
+char	**ft_split(char const *s, char c);
+
 #endif
