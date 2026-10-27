@@ -6,7 +6,7 @@
 /*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 08:30:33 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 00:21:44 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/27 04:30:32 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	d;
+	size_t	a;
 	char	*sr;
 
 	sr = (char *)src;
@@ -31,5 +32,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		i++;
 	}
 	dst[d + i] = '\0';
-	return (d + ft_strlen(sr));
+	a = ft_strlen(sr);
+	return (d + a);
 }

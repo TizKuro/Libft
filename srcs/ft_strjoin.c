@@ -6,7 +6,7 @@
 /*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:18:57 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 00:48:37 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/27 04:40:56 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*rawr;
 	size_t	lens1;
 	size_t	lens2;
+	char	*ret;
 
 	if (!s2 || !s1)
 		return (0);
@@ -49,5 +50,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	rawr = malloc(sizeof(char) * (lens1 + lens2 + 1));
 	if (!rawr)
 		return (0);
-	return (ft_strcat(rawr, s1, s2));
+	ret = ft_strcat(rawr, s1, s2);
+	return (ret);
 }
