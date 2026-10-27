@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/27 00:16:05 by trmorand          #+#    #+#             */
+/*   Updated: 2026/10/27 01:39:04 by trmorand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static	size_t	check(const char *s1, char c)
@@ -7,7 +19,7 @@ static	size_t	check(const char *s1, char c)
 	return (c == *s1);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	p;
 	size_t	l;
@@ -16,7 +28,7 @@ char *ft_strtrim(char const *s1, char const *set)
 		return (0);
 	p = 0;
 	l = ft_strlen(s1);
-	while(check(set, s1[p]))
+	while (check(set, s1[p]))
 		p++;
 	if (p == l)
 		return (ft_strdup(""));

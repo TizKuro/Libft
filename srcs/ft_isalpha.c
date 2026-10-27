@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/19 11:30:39 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/20 10:29:56 by trmorand         ###   ########.fr       */
+/*   Created: 2026/10/27 00:17:15 by trmorand          #+#    #+#             */
+/*   Updated: 2026/10/27 00:17:16 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isalpha(char c)

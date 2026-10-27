@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/27 00:18:57 by trmorand          #+#    #+#             */
+/*   Updated: 2026/10/27 00:48:37 by trmorand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
+
 static char	*ft_strcat(char *new, const char *s1, const char *s2)
 {
 	size_t	d;
@@ -24,7 +36,7 @@ static char	*ft_strcat(char *new, const char *s1, const char *s2)
 	return (new);
 }
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*rawr;
 	size_t	lens1;
@@ -37,5 +49,5 @@ char *ft_strjoin(char const *s1, char const *s2)
 	rawr = malloc(sizeof(char) * (lens1 + lens2 + 1));
 	if (!rawr)
 		return (0);
-	return (ft_strcat(rawr,s1, s2));
+	return (ft_strcat(rawr, s1, s2));
 }

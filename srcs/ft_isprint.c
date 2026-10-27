@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/19 17:06:28 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/22 16:08:27 by trmorand         ###   ########.fr       */
+/*   Created: 2026/10/27 00:17:27 by trmorand          #+#    #+#             */
+/*   Updated: 2026/10/27 00:17:29 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isprint(char c)

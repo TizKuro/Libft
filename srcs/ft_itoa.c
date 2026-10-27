@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/27 00:21:03 by trmorand          #+#    #+#             */
+/*   Updated: 2026/10/27 00:41:33 by trmorand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
+
 static int	ft_len(long int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n <= 0)
@@ -18,36 +30,31 @@ static int	ft_len(long int n)
 	return (len);
 }
 
-
 char	*ft_itoa(int nbr)
 {
-	long int n;
-	 int len;
-	char *rawr;
-	int	i;
-	int	j;
+	long int	n;
+	char		*rawr;
+	int			i;
+	int			j;
 
 	j = 0;
 	n = nbr;
-	len = ft_len(n);
-	rawr = malloc(sizeof(char) * (len + 1));
+	i = ft_len(n) - 1;
+	rawr = malloc(sizeof(char) * (ft_len(n) + 1));
 	if (!rawr)
-	{
 		return (NULL);
-	}
 	if (n < 0)
 	{
 		rawr[j] = '-';
 		n *= -1;
 		j++;
 	}
-	i = len - 1;
 	while (i >= j)
-    {
+	{
 		rawr[i] = n % 10 + '0';
 		n /= 10;
 		i--;
 	}
-	rawr[len] = '\0';
+	rawr[ft_len(nbr)] = '\0';
 	return (rawr);
 }

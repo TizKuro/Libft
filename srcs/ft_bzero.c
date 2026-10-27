@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 13:40:06 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/20 16:59:57 by trmorand         ###   ########.fr       */
+/*   Created: 2026/10/27 00:17:01 by trmorand          #+#    #+#             */
+/*   Updated: 2026/10/27 01:22:32 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
