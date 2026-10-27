@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:11:47 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 04:36:50 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/27 07:07:19 by tristan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,31 +59,41 @@ static char	**ft_free(char **res, int i)
 	return (0);
 }
 
+static char **fill_words(char **res, char const *s, char c, int w)
+{
+	int	i;
+	int	pos;
+	int	begin;
+
+	i = 0;
+	pos = 0;
+	while (i < w)
+	{
+		begin = start(s, pos, c);
+		res[i] = ft_substr(s, begin, end(s, begin, c));
+		if (!res[i])
+		{
+			ft_free(res, i);
+			return (0);
+		}
+		pos = begin + end(s, begin, c);
+		i++;
+	}
+	res[i] = 0;
+	return (res);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	int		i;
 	int		w;
 	char	**res;
-	int		pos;
-	int		begin;
 
-	pos = 0;
-	i = 0;
 	if (!s)
 		return (0);
 	w = word_count(s, c);
 	res = malloc(sizeof(char *) * (w + 1));
 	if (!res)
 		return (0);
-	while (i < w)
-	{
-		begin = start(s, pos, c);
-		res[i] = ft_substr(s, begin, end(s, begin, c));
-		if (!res[i])
-			return (ft_free(res, i));
-		pos = begin + end(s, begin, c);
-		i++;
-	}
-	res[i] = 0;
+	res = fill_words(res, s, c, w);
 	return (res);
 }
