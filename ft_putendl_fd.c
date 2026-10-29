@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 13:48:59 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 01:39:15 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:59:45 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

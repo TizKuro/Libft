@@ -58,6 +58,8 @@ The entire project is written in C and follows the 42 norms.
 ```Bash
 make        # Build libft.a.
 
+make re     # remove and rebuild libft.a
+
 make clean  # remove object files.
 
 make fclean # remove object files and libft.a

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 03:15:55 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 04:42:23 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:52:35 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

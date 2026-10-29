@@ -6,11 +6,9 @@
 /*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:17:27 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 00:17:29 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:48:44 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(char c)
 {

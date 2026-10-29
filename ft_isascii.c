@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/19 17:49:56 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/20 10:49:17 by trmorand         ###   ########.fr       */
+/*   Created: 2026/10/29 18:48:19 by trmorand          #+#    #+#             */
+/*   Updated: 2026/10/29 18:48:23 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 int	ft_isascii(int c)
 {

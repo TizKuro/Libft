@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 14:03:53 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/22 14:05:03 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:58:46 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

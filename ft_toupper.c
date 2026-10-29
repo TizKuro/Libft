@@ -6,10 +6,9 @@
 /*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 18:02:44 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/20 10:20:50 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:54:47 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 int	ft_toupper(int c)
 {

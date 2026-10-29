@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:14:37 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 01:29:38 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:54:04 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

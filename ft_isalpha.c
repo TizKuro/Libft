@@ -6,11 +6,9 @@
 /*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:17:15 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 00:17:16 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:49:28 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(char c)
 {
