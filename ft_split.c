@@ -3,31 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tristan <tristan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:11:47 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/28 01:47:01 by tristan          ###   ########.fr       */
+/*   Updated: 2026/10/29 16:45:47 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	start(char const *s, int i, char c)
-{
-	while (s[i] && s[i] == c)
-		i++;
-	return (i);
-}
-
-static int	end(char const *s, int i, char c)
-{
-	int	len;
-
-	len = 0;
-	while (s[i + len] && s[i + len] != c)
-		len++;
-	return (len);
-}
 
 static int	word_count(char const *s, char c)
 {
@@ -59,24 +42,29 @@ static char	**ft_free(char **res, int i)
 	return (0);
 }
 
-static char **fill_words(char **res, char const *s, char c, int w)
+static char	**fill_words(char **res, char const *s, char c, int w)
 {
 	int	i;
 	int	pos;
 	int	begin;
+	int	len;
 
 	i = 0;
 	pos = 0;
 	while (i < w)
 	{
-		begin = start(s, pos, c);
-		res[i] = ft_substr(s, begin, end(s, begin, c));
-		if (!res[i])
+		while (s[pos] == c)
+			pos++;
+		begin = pos;
+		len = 0;
+		while (s[pos] && s[pos] != c)
 		{
-			ft_free(res, i);
-			return (0);
+			len++;
+			pos++;
 		}
-		pos = begin + end(s, begin, c);
+		res[i] = ft_substr(s, begin, len);
+		if (!res[i])
+			return (ft_free(res, i));
 		i++;
 	}
 	res[i] = 0;
@@ -94,6 +82,5 @@ char	**ft_split(char const *s, char c)
 	res = malloc(sizeof(char *) * (w + 1));
 	if (!res)
 		return (0);
-	res = fill_words(res, s, c, w);
-	return (res);
+	return (fill_words(res, s, c, w));
 }
