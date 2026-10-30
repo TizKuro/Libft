@@ -6,7 +6,7 @@
 /*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:11:47 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/29 18:53:51 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/30 15:47:59 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,14 +57,14 @@ static char	**fill_words(char **res, char const *s, char c, int w)
 			pos++;
 		begin = pos;
 		len = 0;
-		while (s[pos] && s[pos] != c)
-		{
+		while (s[pos] && s[pos++] != c)
 			len++;
-			pos++;
-		}
 		res[i] = ft_substr(s, begin, len);
 		if (!res[i])
-			return (ft_free(res, i));
+		{
+			ft_free(res, i);
+			return (0);
+		}
 		i++;
 	}
 	res[i] = 0;
@@ -75,6 +75,7 @@ char	**ft_split(char const *s, char c)
 {
 	int		w;
 	char	**res;
+	char	**fill;
 
 	if (!s)
 		return (0);
@@ -82,5 +83,6 @@ char	**ft_split(char const *s, char c)
 	res = malloc(sizeof(char *) * (w + 1));
 	if (!res)
 		return (0);
-	return (fill_words(res, s, c, w));
+	fill = fill_words(res, s, c, w);
+	return (fill);
 }

@@ -6,7 +6,7 @@
 /*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:16:05 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 04:38:45 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/30 15:50:40 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	p;
 	size_t	l;
 	char	*sub;
+	char	*ret;
 
 	if (!s1 || !set)
 		return (0);
@@ -32,7 +33,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (check(set, s1[p]))
 		p++;
 	if (p == l)
-		return (ft_strdup(""));
+	{
+		ret = ft_strdup("");
+		return (ret);
+	}
 	while (check(set, s1[l - 1]))
 		l--;
 	sub = ft_substr(s1, p, l - p);
