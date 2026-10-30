@@ -6,7 +6,7 @@
 /*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 14:00:48 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/22 17:54:54 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/30 17:07:21 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ void	*ft_calloc(size_t nelem, size_t elsize)
 {
 	void	*new;
 
-	if (nelem == 0 || elsize == 0)
-		return (malloc(0));
-	if ((nelem * elsize) / elsize != nelem)
+	if (elsize != 0 && nelem > (size_t)-1 / elsize)
 		return (NULL);
 	new = malloc(nelem * elsize);
 	if (!new)
