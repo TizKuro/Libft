@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:50:05 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/22 17:21:12 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 22:30:31 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		i = n - 1;
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
+	if (!dest && !src)
+		return (0);
 	if (d < s)
 		ft_memcpy(dest, src, n);
 	else

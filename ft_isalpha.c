@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:17:15 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/29 18:49:28 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 20:20:15 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z'))
 		return (0);

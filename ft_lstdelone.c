@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 16:32:00 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/29 16:32:05 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 22:26:03 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

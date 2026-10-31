@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:16:05 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/30 15:50:40 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 20:18:06 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (0);
 	p = 0;
 	l = ft_strlen(s1);
-	while (check(set, s1[p]))
+	while (s1[p] && check(set, s1[p]))
 		p++;
 	if (p == l)
 	{

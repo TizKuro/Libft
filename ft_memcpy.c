@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:09:17 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/27 00:43:45 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 22:21:08 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char			*d;
 	const unsigned char		*s;
 
+	if (!dest && !src)
+		return (0);
 	i = 0;
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:21:03 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/29 18:50:16 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 20:21:00 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

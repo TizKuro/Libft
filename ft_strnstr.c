@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 13:24:10 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/22 17:24:09 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 21:03:33 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	p = 0;
 	if (ft_strlen((char *)s2) == 0)
 		return ((char *)s1);
-	while (s1[i] && i < n)
+	while (i < n && s1[i])
 	{
 		if (s1[i] == s2[p])
 		{
 			j = i;
-			while (s1[j] == s2[p] && s2[p] != '\0' && j < n)
+			while (j < n && s1[j] == s2[p] && s2[p] != '\0')
 			{
 				j++;
 				p++;
