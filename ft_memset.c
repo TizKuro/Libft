@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:22:01 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/20 15:19:28 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/10/31 23:30:52 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
