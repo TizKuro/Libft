@@ -45,7 +45,7 @@ The entire project is written in C and follows the 42 norms.
 - `ft_putnbr_fd` Writes an integer to a specified file descriptor.
 ### Linked lists.
 - `ft_lstnew` Creates a new node containing the given data and initializes its next pointer to NULL.
-- `ft_lstadd_front`Adds a new node to the beginning of a linked list.
+- `ft_lstadd_front` Adds a new node to the beginning of a linked list.
 - `ft_lstsize` Returns the number of nodes in a linked list.
 - `ft_lstlast` Returns a pointer to the last node of a linked list.
 - `ft_lstadd_back` Adds a new node to the end of a linked list.
