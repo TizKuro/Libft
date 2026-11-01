@@ -41,7 +41,7 @@ The entire project is written in C and follows the 42 norms.
 - `ft_striteri` Applies a function to each character using its index and its address, allowing the character to be modified.
 - `ft_putchar_fd` Writes a character to a specified file descriptor.
 - `ft_putstr_fd` Writes a string to a specified file descriptor.
-- `ft_putlendl_fd` Writes a string followed by a newline to a specified file descriptor.
+- `ft_pulendl_fd` Writes a string followed by a newline to a specified file descriptor.
 - `ft_putnbr_fd` Writes an integer to a specified file descriptor.
 ### Linked lists.
 - `ft_lstnew` Creates a new node containing the given data and initializes its next pointer to NULL.
