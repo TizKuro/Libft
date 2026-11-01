@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand@student.42angouleme.fr  +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 18:47:07 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/29 18:47:09 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/11/01 01:31:41 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

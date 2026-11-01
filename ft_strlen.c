@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trmorand <trmorand trmorand@student.42a    +#+  +:+       +#+        */
+/*   By: trmorand <trmorand@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 00:19:12 by trmorand          #+#    #+#             */
-/*   Updated: 2026/10/31 23:29:42 by trmorand         ###   ########.fr       */
+/*   Updated: 2026/11/01 01:33:10 by trmorand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
