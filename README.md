@@ -65,6 +65,6 @@ make clean  # remove object files.
 make fclean # remove object files and libft.a
 ```
 ### Resources
-- `man 3` Pages for the original libc fonction.
+- `man 3` Pages for the original libc functions.
 - [Libft_tester](https://github.com/nda-cunh/libft_tester/), a tester for the project created by [nda-cunh](https://github.com/nda-cunh)
 - `AI` was used for some exemples.
